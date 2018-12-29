@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Qair</string>
+    <string name="user_name">User Name or Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="greet_string">New Here ? Sign Up Now</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
