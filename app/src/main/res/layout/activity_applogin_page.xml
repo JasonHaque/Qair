@@ -43,6 +43,7 @@
         android:text="@string/greet_string"
         android:layout_margin="8dp"/>
     <Button
+        android:id="@+id/Signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
