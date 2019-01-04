@@ -4,27 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#e1b7b7">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
+        android:textSize="48sp"
         android:layout_margin="8dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/user_name"/>
+        android:hint="@string/user_name"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="You're profession?"
+        android:layout_margin="8dp" />
+    <CheckBox
+        android:id="@+id/teacher_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Teacher"
+        />
+    <CheckBox
+        android:id="@+id/student_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Student"
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password"/>
+        android:hint="@string/password"
+        android:inputType="textVisiblePassword"/>
+
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password"/>
+        android:hint="@string/confirm_password"
+        android:inputType="textVisiblePassword"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_up"/>
+        android:text="@string/sign_up"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"/>
 </LinearLayout>
