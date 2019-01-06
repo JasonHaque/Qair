@@ -24,20 +24,22 @@
         android:textSize="22sp"
         android:text="You're profession?"
         android:layout_margin="8dp" />
-    <CheckBox
-        android:id="@+id/teacher_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Teacher"
-        />
-    <CheckBox
-        android:id="@+id/student_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Student"
-        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/Teacher_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher"
+            />
+        <RadioButton
+            android:id="@+id/Student_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            />
+    </RadioGroup>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
