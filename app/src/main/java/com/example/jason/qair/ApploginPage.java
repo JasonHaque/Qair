@@ -7,29 +7,24 @@ import android.view.View;
 import android.widget.Button;
 
 public class ApploginPage extends Activity {
-    private Button SignUp,LogIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_applogin_page);
-        SignUp = findViewById(R.id.Signup);
-        LogIn = findViewById(R.id.Login);
-        SignUp.setOnClickListener(new View.OnClickListener() {
+        Button signUp = findViewById(R.id.Signup);
+        Button logIn = findViewById(R.id.Login);
+        signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ApploginPage.this,com.example.jason.qair.SignUp.class));
             }
         });
-        LogIn.setOnClickListener(new View.OnClickListener() {
+        logIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_account_page);
+                startActivity(new Intent(ApploginPage.this,AccountPage.class));
             }
         });
     }
-
-
-
-
 }
