@@ -2,6 +2,7 @@ package com.example.jason.qair;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
@@ -70,7 +71,7 @@ public class SignUp extends Activity {
                         if (task.isSuccessful()){
                             Toast.makeText(SignUp.this,"Success",Toast.LENGTH_LONG).show();
                             progess.dismiss();
-                            setContentView(R.layout.activity_account_page);
+                            startActivity(new Intent(com.example.jason.qair.SignUp.this,AccountPage.class));
                         }
                         else {
                             Toast.makeText(SignUp.this,"Failure",Toast.LENGTH_LONG).show();
