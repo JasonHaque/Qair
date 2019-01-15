@@ -71,6 +71,7 @@ public class SignUp extends Activity {
                         if (task.isSuccessful()){
                             Toast.makeText(SignUp.this,"Success",Toast.LENGTH_LONG).show();
                             progess.dismiss();
+                            finish();
                             startActivity(new Intent(com.example.jason.qair.SignUp.this,AccountPage.class));
                         }
                         else {
