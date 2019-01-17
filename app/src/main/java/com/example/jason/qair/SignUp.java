@@ -57,6 +57,7 @@ public class SignUp extends Activity {
             @Override
             public void onClick(View v) {
                 Occupation = "Teacher";
+                System.out.println(Occupation);
             }
         });
 
@@ -105,9 +106,10 @@ public class SignUp extends Activity {
                         }
                         else {
                             Toast.makeText(SignUp.this,"Failure",Toast.LENGTH_LONG).show();
+                            progess.dismiss();
                         }
 
-                        progess.dismiss();
+
                     }
                 });
     }
@@ -118,7 +120,9 @@ public class SignUp extends Activity {
 
         String id = Database.push().getKey();
 
-        Accounts account = new Accounts(email_string,Occupation);
+        Accounts account = new Accounts(email_string,Occupation,id);
+
+        System.out.println(email_string+" "+ Occupation + " "+ id);
 
         Database.child(id).setValue(account);
 
