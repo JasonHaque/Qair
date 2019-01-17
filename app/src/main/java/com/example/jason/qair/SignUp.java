@@ -27,7 +27,7 @@ public class SignUp extends Activity {
     private DatabaseReference Database;
 
     RadioButton TeacherOption,StudentOption;
-    public String Occupation;
+    public String Occupation="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class SignUp extends Activity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        Database = FirebaseDatabase.getInstance().getReference("Account");
+        Database = FirebaseDatabase.getInstance().getReference("/Account/");
         SignUp =  findViewById(R.id.sign_up);
         user_email = findViewById(R.id.user_email);
         user_password = findViewById(R.id.user_password);
@@ -120,7 +120,7 @@ public class SignUp extends Activity {
 
         Accounts account = new Accounts(email_string,Occupation);
 
-        Database.child(id).setValue(account);
+        Database.child(id).setValue(Occupation);
 
     }
 

@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "587585616329-jf18slf8tk4uqn5ph4ot0jocmj31gr75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jason.qair",
+            "certificate_hash": "96d694d328da3934e3c2d2a7dc9112a9a61f4b00"
+          }
+        },
+        {
           "client_id": "587585616329-8j519jstgc869ai7j1a4u91gq001r7qp.apps.googleusercontent.com",
           "client_type": 3
         }

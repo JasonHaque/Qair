@@ -1,5 +1,6 @@
 package com.example.jason.qair;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +19,7 @@ public class AccountPage extends Activity {
 
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,7 @@ public class AccountPage extends Activity {
 
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
 
+        assert firebaseUser != null;
         emailtext.setText("Welcome to your account "+ firebaseUser.getEmail());
 
         logout.setOnClickListener(new View.OnClickListener() {
