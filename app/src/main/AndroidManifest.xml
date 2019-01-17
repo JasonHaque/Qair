@@ -12,9 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
 
+        android:theme="@style/AppTheme"
+        tools:ignore="ExtraText,GoogleAppIndexingWarning">
         android:theme="@style/AppTheme">
-        android:theme="@style/AppTheme">
-        <activity android:name=".Timeline"></activity>
+        <activity android:name=".Timeline" />
         <activity android:name=".ApploginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
