@@ -90,7 +90,7 @@ public class SignUp extends Activity {
 
 
 
-        progess.setTitle("Signing UP");
+        progess.setTitle("Signing Up");
         progess.show();
 
         firebaseAuth.createUserWithEmailAndPassword(email_string,password_string)
@@ -102,7 +102,7 @@ public class SignUp extends Activity {
                             progess.dismiss();
                             saveData();
                             finish();
-                            startActivity(new Intent(com.example.jason.qair.SignUp.this,AccountPage.class));
+                            startActivity(new Intent(com.example.jason.qair.SignUp.this,Timeline.class));
                         }
                         else {
                             Toast.makeText(SignUp.this,"Failure",Toast.LENGTH_LONG).show();

@@ -66,7 +66,7 @@ public class ApploginPage extends Activity {
                         if (task.isSuccessful()){
                             //finish();
                             progressDialog.dismiss();
-                            startActivity(new Intent(ApploginPage.this,com.example.jason.qair.AccountPage.class));
+                            startActivity(new Intent(ApploginPage.this,com.example.jason.qair.Timeline.class));
                         }
                     }
                 });
