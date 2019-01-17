@@ -41,7 +41,7 @@ public class ApploginPage extends Activity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                //finish();
                 startActivity(new Intent(ApploginPage.this,com.example.jason.qair.SignUp.class));
             }
         });
@@ -62,10 +62,10 @@ public class ApploginPage extends Activity {
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        progressDialog.dismiss();
+                        //progressDialog.dismiss();
                         if (task.isSuccessful()){
-                            finish();
-
+                            //finish();
+                            progressDialog.dismiss();
                             startActivity(new Intent(ApploginPage.this,com.example.jason.qair.AccountPage.class));
                         }
                     }

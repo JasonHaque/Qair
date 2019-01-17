@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">Qair</string>
-    <string name="user_name">User Name or Email</string>
+    <string name="user_name">Email</string>
     <string name="password">Password</string>
     <string name="log_in">Log In</string>
     <string name="greet_string">New Here ? Sign Up Now</string>
     <string name="sign_up">Sign Up</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="logout">Logout</string>
+    <string name="you_re_profession">You\'re profession?</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
 </resources>

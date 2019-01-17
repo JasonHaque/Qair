@@ -1,24 +1,29 @@
 package com.example.jason.qair;
 
 public class Accounts {
-    public String Email;
-    public String Occupation;
+
+
+    public String email;
+    public String occupation;
     public String id;
+
 
     public Accounts(){
 
     }
 
     public Accounts(String email, String occupation,String id) {
-        Email = email;
-        Occupation = occupation;
+        email = email;
+        occupation = occupation;
+        id=id;
+
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public String getOccupation() {
-        return Occupation;
+        return occupation;
     }
 }

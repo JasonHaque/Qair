@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_name"
         android:textSize="48sp"
-        android:layout_margin="8dp"
+        android:layout_margin="30dp"
         android:layout_gravity="center" />
 
     <EditText
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:layout_margin="8dp"/>
+        android:layout_margin="16dp"/>
 
     <EditText
         android:textSize="22sp"
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:layout_margin="8dp"/>
+        android:layout_margin="16dp"/>
     <Button
         android:id="@+id/Login"
         android:text="@string/log_in"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:background="@color/colorPrimary"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_gravity="center"/>
 
     <TextView
