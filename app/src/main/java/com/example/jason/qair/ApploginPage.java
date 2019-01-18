@@ -57,6 +57,7 @@ public class ApploginPage extends Activity {
         String password = LoginPassword.getText().toString();
         if(email.isEmpty() || password.isEmpty()){
             Toast.makeText(ApploginPage.this,"Fill up the fields properly",Toast.LENGTH_LONG).show();
+            return;
         }
         progressDialog.setTitle("Logging you in");
         progressDialog.show();
