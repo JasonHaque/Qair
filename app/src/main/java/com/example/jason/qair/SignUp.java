@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -46,9 +47,11 @@ public class SignUp extends Activity {
         TeacherOption = findViewById(R.id.Teacher_option);
         StudentOption = findViewById(R.id.Student_option);
 
+
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 signup();
             }
         });
@@ -57,7 +60,6 @@ public class SignUp extends Activity {
             @Override
             public void onClick(View v) {
                 Occupation = "Teacher";
-                System.out.println(Occupation);
             }
         });
 
