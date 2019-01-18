@@ -55,7 +55,9 @@ public class ApploginPage extends Activity {
     private void UserLogIn(){
         String email = LoginMail.getText().toString();
         String password = LoginPassword.getText().toString();
-
+        if(email.isEmpty() || password.isEmpty()){
+            Toast.makeText(ApploginPage.this,"Fill up the fields properly",Toast.LENGTH_LONG).show();
+        }
         progressDialog.setTitle("Logging you in");
         progressDialog.show();
         firebaseAuth.signInWithEmailAndPassword(email,password)
