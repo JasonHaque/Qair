@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/kathali"
     tools:context=".Timeline">
 
     <ImageButton
@@ -37,6 +38,7 @@
         android:layout_height="56dp"
         android:layout_gravity="start"
         android:layout_alignParentBottom="true"
+        android:background="@color/keyguard_avatar_frame_shadow_color"
         app:menu="@menu/bottom_nav" />
 
 </RelativeLayout>
