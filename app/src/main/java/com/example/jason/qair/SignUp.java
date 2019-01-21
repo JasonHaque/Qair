@@ -126,7 +126,7 @@ public class SignUp extends Activity {
 
         System.out.println(email_string+" "+ Occupation + " "+ id);
 
-        Database.child("/ID/").setValue(Occupation);
+        Database.child("ID").child(id).setValue(Occupation);
 
     }
 
