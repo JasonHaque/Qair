@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,ExtraText,GoogleAppIndexingWarning">
-        <activity android:name=".ExamCreate"></activity>
+        <activity android:name=".QuestionCreate"></activity>
+        <activity android:name=".ExamCreate" />
         <activity
             android:name=".Timeline"
             android:theme="@style/newTheme" />
