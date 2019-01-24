@@ -38,9 +38,10 @@ public class ExamCreate extends Activity {
                     Toast.makeText(ExamCreate.this,"Fill up the fields properly",Toast.LENGTH_LONG).show();
                     return;
                 }
-                if((!mcqOption.isSelected() && !writtenOption.isSelected()) || (!publicOption.isSelected() && !privateOption.isSelected())){
-                    Toast.makeText(ExamCreate.this,"Fill up the fields properly",Toast.LENGTH_LONG).show();
+                if (!(mcqOption.isChecked() || writtenOption.isChecked()) || !(privateOption.isChecked() || publicOption.isChecked())){
+                    Toast.makeText(ExamCreate.this,"Fill up the options properly",Toast.LENGTH_LONG).show();
                     return;
+
                 }
                 startActivity(new Intent(ExamCreate.this,QuestionCreate.class));
             }
