@@ -34,6 +34,9 @@ public class ApploginPage extends Activity {
         Button signUp = findViewById(R.id.Signup);
         logIn = findViewById(R.id.Login);
 
+        if(firebaseAuth.getCurrentUser() != null){
+            startActivity(new Intent(ApploginPage.this,com.example.jason.qair.Timeline.class));
+        }
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
