@@ -2,12 +2,15 @@ package com.example.jason.qair;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.concurrent.RecursiveTask;
 
 public class QuestionCreate extends Activity {
 
@@ -34,6 +37,17 @@ public class QuestionCreate extends Activity {
             public void onClick(View v) {
                 String a=QuestionNumber.getText().toString();
                 int b = Integer.parseInt(a)+1;
+                String optiona,optionb,optionc,optiond,optionchoice,questext;
+                questext=questiontext.getText().toString();
+                optiona=optionA.getText().toString();
+                optionb=optionB.getText().toString();
+                optionc=optionC.getText().toString();
+                optiond=optionD.getText().toString();
+                optionchoice=ChoiceOption.getText().toString();
+                if(TextUtils.isEmpty(questext) || TextUtils.isEmpty(optiona) || TextUtils.isEmpty(optionb) || TextUtils.isEmpty(optionc) || TextUtils.isEmpty(optiond) || TextUtils.isEmpty(optionchoice)){
+                    Toast.makeText(QuestionCreate.this,"Fill everything properly",Toast.LENGTH_LONG).show();
+                    return;
+                }
                 QuestionNumber.setText(String.valueOf(b));
                 questiontext.setText("");
                 optionA.setText("");
