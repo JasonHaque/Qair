@@ -34,14 +34,9 @@ public class ApploginPage extends Activity {
         Button signUp = findViewById(R.id.Signup);
         logIn = findViewById(R.id.Login);
 
-        /*if(firebaseAuth.getCurrentUser() != null){
-            startActivity(new Intent(ApploginPage.this,AccountPage.class));
-        } */
-
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //finish();
                 startActivity(new Intent(ApploginPage.this,com.example.jason.qair.SignUp.class));
             }
         });
@@ -65,11 +60,13 @@ public class ApploginPage extends Activity {
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        //progressDialog.dismiss();
                         if (task.isSuccessful()){
-                            //finish();
                             progressDialog.dismiss();
                             startActivity(new Intent(ApploginPage.this,com.example.jason.qair.Timeline.class));
+                        }
+                        else{
+                            progressDialog.dismiss();
+                            Toast.makeText(ApploginPage.this,"Wrong email or password",Toast.LENGTH_LONG).show();
                         }
                     }
                 });

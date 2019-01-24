@@ -30,8 +30,7 @@
             android:id="@+id/Question_text"
             android:hint="Enter The Question Here"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"/>
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
     <LinearLayout
@@ -47,7 +46,6 @@
         <EditText
             android:id="@+id/OptionA"
             android:hint="Option A"
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -66,8 +64,7 @@
             android:id="@+id/OptionB"
             android:hint="Option B"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"/>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
     <LinearLayout
@@ -83,7 +80,6 @@
         <EditText
             android:id="@+id/OptionC"
             android:hint="Option C"
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -101,7 +97,6 @@
         <EditText
             android:id="@+id/OptionD"
             android:hint="Option D"
-            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -120,8 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="A/B/C/D"
-        android:textStyle="bold"/>
+        android:hint="A/B/C/D" />
     <ImageButton
         android:id="@+id/question_button"
         android:layout_width="60dp"
@@ -138,7 +132,6 @@
         android:layout_height="wrap_content"
         android:text="Create Exam"
         android:layout_gravity="center"
-        android:textStyle="bold"
         android:textColor="@color/background_dark"
         android:background="@color/colorPrimary"
         android:textSize="18sp"/>
