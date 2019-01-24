@@ -13,7 +13,8 @@
         android:text="EXAM NAME"
         android:textSize="42sp"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="36dp"
+        android:layout_marginTop="24dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,11 +23,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="22sp"
-            android:text="1"/>
+            android:text="1"
+            android:textStyle="bold"/>
         <EditText
             android:hint="Enter The Question Here"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
 
     </LinearLayout>
     <LinearLayout
@@ -37,9 +40,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="22sp"
-            android:text="A"/>
+            android:text="A"
+            android:textStyle="bold"/>
         <EditText
             android:hint="Option A"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -52,11 +57,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="22sp"
-            android:text="B"/>
+            android:text="B"
+            android:textStyle="bold"/>
         <EditText
             android:hint="Option B"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
 
     </LinearLayout>
     <LinearLayout
@@ -67,9 +74,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="22sp"
-            android:text="C"/>
+            android:text="C"
+            android:textStyle="bold"/>
         <EditText
             android:hint="Option C"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -82,9 +91,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="22sp"
-            android:text="D"/>
+            android:text="D"
+            android:textStyle="bold"/>
         <EditText
             android:hint="Option D"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -94,22 +105,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Enter The Correct Option Number"/>
+        android:text="Enter The Correct Option Number"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/dim_foreground_holo_light"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="A/B/C/D"/>
+        android:hint="A/B/C/D"
+        android:textStyle="bold"/>
     <ImageButton
         android:id="@+id/question_button"
-        android:layout_width="40sp"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
         android:background="@color/colorPrimary"
         android:src="@drawable/exam_create"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true"/>
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Exam"/>
+        android:text="Create Exam"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/background_dark"
+        android:background="@color/colorPrimary"
+        android:textSize="18sp"/>
 </LinearLayout>
