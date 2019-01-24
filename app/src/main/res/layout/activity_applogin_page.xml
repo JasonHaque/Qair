@@ -17,7 +17,7 @@
 
     <EditText
         android:hint="@string/user_name"
-        android:textSize="22sp"
+        android:textSize="16sp"
         android:id="@+id/LoginMail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         android:layout_margin="16dp"/>
 
     <EditText
-        android:textSize="22sp"
+        android:textSize="16sp"
         android:hint="@string/password"
         android:id="@+id/LoginPassword"
         android:layout_width="match_parent"
@@ -35,28 +35,29 @@
     <Button
         android:id="@+id/Login"
         android:text="@string/log_in"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:background="@color/colorPrimary"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/greet_string"
-        android:textSize="22sp"
-        android:layout_margin="8dp"
-        android:layout_gravity="center"/>
+        android:textColor="@color/background_holo_dark"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center" />
 
     <Button
         android:id="@+id/Signup"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
         android:padding="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:background="@color/colorPrimary"
         android:layout_gravity="center"/>
 </LinearLayout>

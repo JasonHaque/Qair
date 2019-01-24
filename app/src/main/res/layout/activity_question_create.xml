@@ -1,138 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/kathali"
-    tools:context=".QuestionCreate">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EXAM NAME"
-        android:textSize="42sp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="36dp"
-        android:layout_marginTop="24dp"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/Question_number_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="1"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/Question_text"
-            android:hint="Enter The Question Here"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+    android:background="@color/kathali">
 
-    </LinearLayout>
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/kathali"
+        android:padding="8dp"
+        tools:context=".QuestionCreate">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="A"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/OptionA"
-            android:hint="Option A"
+            android:text="EXAM NAME"
+            android:textSize="42sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="36dp"
+            android:layout_marginTop="24dp"/>
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/Question_number_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="1"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Question_text"
+                android:hint="Enter The Question Here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="A. "
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/OptionA"
+                android:hint="Option A"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="B. "
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/OptionB"
+                android:hint="Option B"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="C. "
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/OptionC"
+                android:hint="Option C"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="D. "
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/OptionD"
+                android:hint="Option D"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Enter The Correct Option Number"
             android:textSize="22sp"
-            android:text="B"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/dim_foreground_holo_light"/>
         <EditText
-            android:id="@+id/OptionB"
-            android:hint="Option B"
+            android:id="@+id/OptionChoice"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="C"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/OptionC"
-            android:hint="Option C"
+            android:layout_marginTop="16dp"
+            android:hint="A/B/C/D" />
+        <ImageButton
+            android:id="@+id/question_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@color/kathali"
+            android:src="@drawable/exam_create"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="8dp" />
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="D"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/OptionD"
-            android:hint="Option D"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+            android:text="Create Exam"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/colorPrimary"
+            android:textSize="18sp"/>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Enter The Correct Option Number"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="@color/dim_foreground_holo_light"/>
-    <EditText
-        android:id="@+id/OptionChoice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="A/B/C/D" />
-    <ImageButton
-        android:id="@+id/question_button"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimary"
-        android:src="@drawable/exam_create"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Create Exam"
-        android:layout_gravity="center"
-        android:textColor="@color/background_dark"
-        android:background="@color/colorPrimary"
-        android:textSize="18sp"/>
-</LinearLayout>
+</ScrollView>

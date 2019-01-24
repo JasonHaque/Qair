@@ -1,94 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/kathali"
-    tools:context=".ExamCreate">
+    android:background="@color/kathali">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="48sp"
-        android:text="@string/app_name"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="24dp"
-        android:layout_gravity="center" />
-    <EditText
-        android:id="@+id/exam_name"
-        android:inputType="text"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginBottom="16dp"
-        android:hint="@string/exam_name"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Category : "
-        android:textSize="22sp"
-        android:layout_marginBottom="16dp"
-        android:textStyle="bold"/>
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:id="@+id/mcq_option"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/kathali"
+        android:padding="8dp"
+        tools:context=".ExamCreate">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="MCQ"/>
-        <RadioButton
-            android:id="@+id/written_question_option"
+            android:textSize="48sp"
+            android:text="@string/app_name"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center" />
+        <EditText
+            android:id="@+id/exam_name"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/exam_name"/>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Written Answers"/>
-    </RadioGroup>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exam Privacy : "
-        android:textSize="22sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:textStyle="bold"/>
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:id="@+id/public_option"
+            android:text="Category : "
+            android:textSize="22sp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/mcq_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MCQ"/>
+            <RadioButton
+                android:id="@+id/written_question_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Written Answers"/>
+        </RadioGroup>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Public"/>
+            android:text="Exam Privacy : "
+            android:textSize="22sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/public_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Public"/>
 
-        <RadioButton
-            android:id="@+id/private_option"
+            <RadioButton
+                android:id="@+id/private_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private" />
+        </RadioGroup>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Private" />
-    </RadioGroup>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exam Date"
-        android:textSize="22sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:textStyle="bold"/>
-    <EditText
-        android:id="@+id/Date_option"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="date"
-        android:layout_marginBottom="16dp"/>
+            android:text="Exam Date : "
+            android:textSize="22sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/Date_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_marginBottom="16dp"/>
 
-    <Button
-        android:id="@+id/create_exam"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:text="Create"
-        android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/create_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Create"
+            android:layout_gravity="center"/>
 
 
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
