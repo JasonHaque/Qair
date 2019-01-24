@@ -74,7 +74,7 @@ public class SignUp extends Activity {
 
     public void signup()
     {
-        String email_string = user_email.getText().toString();
+        String email_string = user_email.getText().toString().trim();
         String password_string = user_password.getText().toString();
         String confirm_password_string = user_confirm_password.getText().toString();
 

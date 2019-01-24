@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/kathali"
-        android:padding="8dp"
+        android:padding="16dp"
         tools:context=".ExamCreate">
 
         <TextView
