@@ -27,6 +27,7 @@
         <EditText
             android:id="@+id/exam_name"
             android:inputType="text"
+            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="16dp"
@@ -85,6 +86,8 @@
             android:textStyle="bold"/>
         <EditText
             android:id="@+id/Date_option"
+            android:hint="@string/date_format"
+            android:textSize="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="date"

@@ -12,4 +12,5 @@
     <string name="student">Student</string>
     <string name="exam_name">Exam Name</string>
     <string name="add_question">Add another question</string>
+    <string name="date_format">dd/mm/yy</string>
 </resources>
