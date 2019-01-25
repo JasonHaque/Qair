@@ -129,17 +129,33 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="A/B/C/D" />
-        <ImageButton
-            android:id="@+id/question_button"
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:background="@color/kathali"
-            android:src="@drawable/exam_create"
-            android:scaleType="fitCenter"
-            android:adjustViewBounds="true"
-            android:layout_gravity="center"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="48dp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp">
+            <ImageButton
+                android:id="@+id/question_button"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@color/kathali"
+                android:src="@drawable/exam_create"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="8dp" />
+            <TextView
+                android:id="@+id/add_question_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_question"
+                android:textSize="22sp"
+                android:layout_marginTop="18dp"/>
+
+        </LinearLayout>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

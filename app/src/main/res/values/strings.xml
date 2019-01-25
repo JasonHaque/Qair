@@ -11,4 +11,5 @@
     <string name="teacher">Teacher</string>
     <string name="student">Student</string>
     <string name="exam_name">Exam Name</string>
+    <string name="add_question">Add another question</string>
 </resources>
