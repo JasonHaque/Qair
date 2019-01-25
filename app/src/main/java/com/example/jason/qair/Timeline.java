@@ -39,7 +39,6 @@ public class Timeline extends Activity {
             @Override
             public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
                     startActivity(new Intent(Timeline.this,AccountPage.class));
-
             }
         });
     }
