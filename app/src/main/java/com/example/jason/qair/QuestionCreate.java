@@ -1,6 +1,7 @@
 package com.example.jason.qair;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -10,6 +11,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.util.concurrent.RecursiveTask;
 
 public class QuestionCreate extends Activity {
@@ -17,11 +21,15 @@ public class QuestionCreate extends Activity {
     private ImageButton questionCreate;
     private TextView QuestionNumber;
     private EditText questiontext,optionA,optionB,optionC,optionD,ChoiceOption;
+    private FirebaseFirestore database = FirebaseFirestore.getInstance();
+    private CollectionReference examref = database.collection("exam");
+    private ProgressDialog prog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_create);
 
+        prog = new ProgressDialog(this);
         questionCreate = findViewById(R.id.question_button);
         QuestionNumber = findViewById(R.id.Question_number_view);
         questiontext = findViewById(R.id.Question_text);
@@ -48,6 +56,12 @@ public class QuestionCreate extends Activity {
                     Toast.makeText(QuestionCreate.this,"Fill everything properly",Toast.LENGTH_LONG).show();
                     return;
                 }
+                prog.setTitle("Saving Question");
+                prog.show();
+                Question question = new Question(questext,optiona,optionb,optionc,optiond,optionchoice);
+
+                examref.add(question);
+                prog.dismiss();
                 QuestionNumber.setText(String.valueOf(b));
                 questiontext.setText("");
                 optionA.setText("");
@@ -59,4 +73,6 @@ public class QuestionCreate extends Activity {
             }
         });
     }
+
+
 }
