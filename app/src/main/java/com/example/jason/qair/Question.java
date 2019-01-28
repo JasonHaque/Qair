@@ -1,4 +1,7 @@
 package com.example.jason.qair;
+
+import com.google.firebase.firestore.Exclude;
+
 public class Question {
     private String questiontext,optiona,optionb,optionc,optiond,correctoption;
     private String id;
@@ -40,6 +43,7 @@ public class Question {
         return correctoption;
     }
 
+    @Exclude
     public String getId() {
         return id;
     }
