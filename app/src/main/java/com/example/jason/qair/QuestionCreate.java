@@ -2,6 +2,7 @@ package com.example.jason.qair;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -24,6 +25,7 @@ public class QuestionCreate extends Activity {
     private FirebaseFirestore database = FirebaseFirestore.getInstance();
     private CollectionReference examref = database.collection("exam");
     private ProgressDialog prog;
+    private Button CreateExam ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +40,7 @@ public class QuestionCreate extends Activity {
         optionC = findViewById(R.id.OptionC);
         optionD = findViewById(R.id.OptionD);
         ChoiceOption = findViewById(R.id.OptionChoice);
-
+        CreateExam = findViewById(R.id.create_exam_button);
 
         questionCreate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +74,14 @@ public class QuestionCreate extends Activity {
                 Toast.makeText(QuestionCreate.this,"Question Created",Toast.LENGTH_LONG).show();
             }
         });
+
+        CreateExam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(QuestionCreate.this,ShowQuestion.class));
+            }
+        });
+
     }
 
 
