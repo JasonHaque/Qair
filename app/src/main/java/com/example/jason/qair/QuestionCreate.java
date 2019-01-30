@@ -60,7 +60,7 @@ public class QuestionCreate extends Activity {
                 }
                 prog.setTitle("Saving Question");
                 prog.show();
-                Question question = new Question(questext,optiona,optionb,optionc,optiond,optionchoice);
+                Question question = new Question(questext,optiona,optionb,optionc,optiond,optionchoice,Integer.parseInt(a));
 
                 examref.add(question);
                 prog.dismiss();
@@ -78,6 +78,7 @@ public class QuestionCreate extends Activity {
         CreateExam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 startActivity(new Intent(QuestionCreate.this,ShowQuestion.class));
             }
         });
