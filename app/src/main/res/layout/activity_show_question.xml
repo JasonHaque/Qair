@@ -5,134 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/kathali"
     tools:context=".ShowQuestion">
 
-    <LinearLayout
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-       <TextView
-           android:id="@+id/Showquestionnumber"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:textSize="22sp"
-           android:text="1"
-           android:textStyle="bold"
-           android:layout_marginRight="14dp"/>
-        <TextView
-            android:id="@+id/showquestiontext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+        android:layout_height="wrap_content">
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
         <TextView
+            android:id="@+id/text_view_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="A"
-            android:textStyle="bold"
-            android:layout_marginRight="14dp"/>
-        <TextView
-            android:id="@+id/showoptiona"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:textSize="20sp" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="B"
-            android:textStyle="bold"
-            android:layout_marginRight="14dp"/>
-        <TextView
-            android:id="@+id/showoptionb"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="C"
-            android:textStyle="bold"
-            android:layout_marginRight="14dp"/>
-        <TextView
-            android:id="@+id/showoptionc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="D"
-            android:textStyle="bold"
-            android:layout_marginRight="14dp"/>
-        <TextView
-            android:id="@+id/showoptiond"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:text="Correct Choice Input"
-            android:textStyle="bold"
-            android:layout_marginRight="14dp"/>
-        <EditText
-            android:id="@+id/showchoiceoption"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+    </android.support.v4.widget.NestedScrollView>
 
 
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/submit_answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit Answer"/>
-
-    <Button
-        android:id="@+id/next_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next Question"/>
 
 </LinearLayout>
