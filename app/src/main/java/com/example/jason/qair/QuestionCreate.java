@@ -17,13 +17,15 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.concurrent.RecursiveTask;
 
+import static com.example.jason.qair.ExamCreate.examname;
+
 public class QuestionCreate extends Activity {
 
     private ImageButton questionCreate;
     private TextView QuestionNumber;
     private EditText questiontext,optionA,optionB,optionC,optionD,ChoiceOption;
     private FirebaseFirestore database = FirebaseFirestore.getInstance();
-    private CollectionReference examref = database.collection("exam");
+    private CollectionReference examref = database.collection(""+ examname);
     private ProgressDialog prog;
     private Button CreateExam ;
     @Override

@@ -15,6 +15,7 @@ public class ExamCreate extends Activity {
     private Button CreateExam;
     private RadioButton mcqOption,writtenOption,publicOption,privateOption;
     private EditText examName,examDate;
+    public static String examname;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +35,7 @@ public class ExamCreate extends Activity {
                 String eName=examName.getText().toString();
                 String eDate=examDate.getText().toString();
 
+                examname = eName;
                 if(TextUtils.isEmpty(eName) || TextUtils.isEmpty(eDate)){
                     Toast.makeText(ExamCreate.this,"Fill up the fields properly",Toast.LENGTH_LONG).show();
                     return;
