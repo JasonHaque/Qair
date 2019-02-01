@@ -8,22 +8,48 @@
     android:background="@color/kathali">
 
     <ImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:src="@drawable/displaypic"
         android:scaleType="fitCenter"
-        android:adjustViewBounds="true"/>
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="24dp"/>
 
     <TextView
+        android:layout_gravity="center"
         android:id="@+id/Textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="22sp"/>
-    <Button
-        android:id="@+id/Logoutbutton"
+        android:textSize="22sp"
+        android:layout_marginTop="24dp"/>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/TextviewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/logout"/>
+        android:textSize="22sp"
+        android:textColor="@color/background_holo_dark"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
 
+    <ImageButton
+        android:id="@+id/Logoutbutton"
+        android:src="@drawable/logoutmain"
+        android:background="@color/kathali"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
 
 </LinearLayout>
