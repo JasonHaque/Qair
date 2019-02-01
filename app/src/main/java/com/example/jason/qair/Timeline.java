@@ -38,7 +38,9 @@ public class Timeline extends Activity {
         bottomNav.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
             @Override
             public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
-                    startActivity(new Intent(Timeline.this,AccountPage.class));
+                    if(menuItem.getItemId() == R.id.Profile) {
+                        startActivity(new Intent(Timeline.this,AccountPage.class));
+                    }
             }
         });
     }
