@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RadioGroup;
 
+import java.sql.Time;
+
 public class Timeline extends Activity {
 
     private ImageButton searchButton,examCreateButton;
@@ -41,6 +43,9 @@ public class Timeline extends Activity {
                     if(menuItem.getItemId() == R.id.Profile) {
                         startActivity(new Intent(Timeline.this,AccountPage.class));
                     }
+                    else if(menuItem.getItemId() == R.id.LogIcon) {
+                        startActivity(new Intent(Timeline.this,LogActivity.class));
+                }
             }
         });
     }
