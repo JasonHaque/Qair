@@ -24,7 +24,7 @@ import static com.example.jason.qair.ExamCreate.examname;
 public class QuestionCreate extends Activity {
 
     private ImageButton questionCreate;
-    private TextView QuestionNumber;
+    private TextView QuestionNumber,NameOfExam;
     private EditText questiontext,optionA,optionB,optionC,optionD,ChoiceOption;
     private FirebaseFirestore database = FirebaseFirestore.getInstance();
     private CollectionReference dref = database.collection("EXAMS");
@@ -46,6 +46,9 @@ public class QuestionCreate extends Activity {
         optionD = findViewById(R.id.OptionD);
         ChoiceOption = findViewById(R.id.OptionChoice);
         CreateExam = findViewById(R.id.create_exam_button);
+        NameOfExam = findViewById(R.id.name_of_exam);
+
+        NameOfExam.setText(examname);
 
         questionCreate.setOnClickListener(new View.OnClickListener() {
             @Override
