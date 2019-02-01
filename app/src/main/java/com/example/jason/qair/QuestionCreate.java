@@ -13,10 +13,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.concurrent.RecursiveTask;
 
+import static com.example.jason.qair.ApploginPage.userID;
 import static com.example.jason.qair.ExamCreate.examname;
 
 public class QuestionCreate extends Activity {
@@ -25,7 +27,8 @@ public class QuestionCreate extends Activity {
     private TextView QuestionNumber;
     private EditText questiontext,optionA,optionB,optionC,optionD,ChoiceOption;
     private FirebaseFirestore database = FirebaseFirestore.getInstance();
-    private CollectionReference examref = database.collection(""+ examname);
+    private CollectionReference dref = database.collection("EXAMS");
+    private CollectionReference examref = dref.document(""+userID).collection(""+examname);
     private ProgressDialog prog;
     private Button CreateExam ;
     @Override

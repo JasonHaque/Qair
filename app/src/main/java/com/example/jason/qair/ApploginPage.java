@@ -21,6 +21,7 @@ public class ApploginPage extends Activity {
     private Button logIn;
     private FirebaseAuth firebaseAuth;
     private ProgressDialog progressDialog;
+    public static String userID ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,8 @@ public class ApploginPage extends Activity {
         logIn = findViewById(R.id.Login);
 
         if(firebaseAuth.getCurrentUser() != null){
+            String [] mail = firebaseAuth.getCurrentUser().getEmail().split("@");
+            userID = mail[0];
             startActivity(new Intent(ApploginPage.this,com.example.jason.qair.Timeline.class));
         }
         signUp.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +54,7 @@ public class ApploginPage extends Activity {
         });
     }
     private void UserLogIn(){
-        String email = LoginMail.getText().toString().trim();
+        final String email = LoginMail.getText().toString().trim();
         String password = LoginPassword.getText().toString();
         if(email.isEmpty() || password.isEmpty()){
             Toast.makeText(ApploginPage.this,"Fill up the fields properly",Toast.LENGTH_LONG).show();
@@ -65,6 +68,9 @@ public class ApploginPage extends Activity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             progressDialog.dismiss();
+                            String [] mail = email.split("@");
+                            userID = mail[0];
+                            System.out.println(userID);
                             startActivity(new Intent(ApploginPage.this,com.example.jason.qair.Timeline.class));
                         }
                         else{

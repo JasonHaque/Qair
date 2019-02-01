@@ -13,6 +13,7 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import static com.example.jason.qair.ApploginPage.userID;
 import static com.example.jason.qair.ExamCreate.examname;
 
 
@@ -21,7 +22,8 @@ public class ShowQuestion extends Activity {
 
     private TextView textView;
     private FirebaseFirestore db=FirebaseFirestore.getInstance();
-    private CollectionReference examref = db.collection(""+examname);
+    private CollectionReference dref = db.collection("EXAMS");
+    private CollectionReference examref = dref.document(""+userID).collection(""+examname);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
