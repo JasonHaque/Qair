@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import static com.example.jason.qair.ApploginPage.userID;
+
 public class AccountPage extends Activity {
 
     private TextView emailtext;
@@ -31,7 +33,7 @@ public class AccountPage extends Activity {
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
 
         assert firebaseUser != null;
-        emailtext.setText("Welcome to your account "+ firebaseUser.getEmail());
+        emailtext.setText("Welcome to your account "+ userID);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
