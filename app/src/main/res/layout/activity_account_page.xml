@@ -18,12 +18,12 @@
         android:layout_marginBottom="24dp"/>
 
     <TextView
-        android:layout_gravity="center"
         android:id="@+id/Textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_marginTop="24dp"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:textSize="22sp" />
     <TextView
         android:layout_gravity="center"
         android:id="@+id/TextviewName"
